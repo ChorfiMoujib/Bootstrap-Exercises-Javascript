@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Popover Exercise</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-fRyfJv7w16nv1z5V5pjLcZa3q3+f0+DKffoQ9b+B5iE+m7g5amih1gH5VZ8dKVLmCqZnrlmG+jvl2ch8lTVBKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h1>Popover Exercise</h1>
+    <h2>Now ensure these popovers also work.</h2>
+
+    <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="click" data-placement="top" data-content="Top popover content">Top</a>
+    <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="click" data-placement="bottom" data-content="Bottom popover content">Bottom</a>
+    <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="click" data-placement="left" data-content="Left popover content">Left</a>
+    <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="click" data-placement="right" data-content="Right popover content">Right</a>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-BJnkzgWk/Omd7VlHhGl5i5DP5kWcZ+7TGTe50tLRc+iQXkw61WCDkJ8Qv/mk86gi5aA1h6W1b8eVjzp56tiOoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-HdGzzj+SOIv1bRdYZJF+1wNh2Q8qqK97+J9P53xFe3qWleL8+eKjDDnuJZaUIwZQW8GvIYlD9fnO3xq3Gj8JvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(document).ready(function() {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+</body>
+</html>
